@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
-<body style="text-align:center;margin-top:15%">
-<h1>Cognis</h1>
-<input id="q" style="width:300px;padding:10px">
-<button onclick="go()">Ara</button>
-<script>
-function go(){
- location.href="https://google.com/search?q="+q.value
-}
-</script>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cognis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cognis</h1>
+        <p>Kendi tarayıcım, kendi aramam.</p>
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Cognis ile ara..."
+        >
+
+        <button onclick="search()">Ara</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
